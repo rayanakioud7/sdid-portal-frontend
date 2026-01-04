@@ -1,20 +1,16 @@
-// src/pages/CourseDetailsPage.jsx
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import SubmitAssignmentModal from '../components/SubmitAssignmentModal';
-import FeedbackModal from '../components/FeedbackModal'; // <--- 1. IMPORT THIS
+import FeedbackModal from '../components/FeedbackModal';
 import MoroccanPattern from '../components/MoroccanPattern'; 
 
 const CourseDetailsPage = () => {
+  // ... (All state and helper functions remain the same)
   const { id } = useParams();
-  
   const [activeTab, setActiveTab] = useState('materials');
-  
-  // MODAL STATES
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
-  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false); // <--- 2. NEW STATE
+  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
   const [selectedAssignment, setSelectedAssignment] = useState(null);
-  
   const [newMessage, setNewMessage] = useState("");
 
   const handleOpenSubmitModal = (assignment) => {
@@ -22,7 +18,6 @@ const CourseDetailsPage = () => {
     setIsSubmitModalOpen(true);
   };
 
-  // 3. NEW HANDLER FOR FEEDBACK
   const handleOpenFeedbackModal = (assignment) => {
     setSelectedAssignment(assignment);
     setIsFeedbackModalOpen(true);
@@ -35,8 +30,9 @@ const CourseDetailsPage = () => {
     return 0;
   };
 
-  // Mock Data (Added 'feedback' field)
+  // Mock Data
   const courseData = {
+    // ... (same mock data)
     title: "Data Warehousing",
     instructor: "Prof. El Amrani",
     description: "Master the concepts of ETL, OLAP, and Star Schemas for enterprise data management.",
@@ -51,7 +47,6 @@ const CourseDetailsPage = () => {
         dueDate: "Dec 15, 2025", 
         status: "Submitted", 
         grade: "16/20",
-        // ADDED FEEDBACK DATA HERE
         feedback: "Excellent work on the Talend job design. Your error handling was very robust. However, the documentation for the Star Schema was a bit brief. Try to elaborate more on the dimension choices next time.",
         feedbackDate: "Dec 18, 2025"
       },
@@ -72,24 +67,37 @@ const CourseDetailsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 font-sans text-white selection:bg-cyan-500 selection:text-white relative overflow-hidden">
+      
       <MoroccanPattern rotate={false} />
 
-      {/* Navbar & Hero (Same as before)... */}
+      {/* Navbar - UPDATED with full profile section */}
       <nav className="relative z-50 w-full px-6 py-4 flex justify-between items-center backdrop-blur-md border-b border-white/10 bg-slate-900/40">
          <Link to="/modules" className="flex items-center space-x-2 group">
-            <div className="h-9 w-9 bg-blue-600 rounded-lg flex items-center justify-center font-bold shadow-lg shadow-blue-500/30 text-white group-hover:scale-110 transition-transform">F</div>
+            <div className="h-9 w-9 bg-blue-600 rounded-lg flex items-center justify-center font-bold shadow-lg shadow-blue-500/30 text-white group-hover:scale-110 transition-transform">S</div>
             <span className="text-xl font-bold tracking-wide">SDID <span className="text-cyan-400">Portal</span></span>
          </Link>
-         <div className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400"></div>
+         
+         {/* REPLACED: The simple circle with the full "Welcome, Student" section */}
+         <div className="flex items-center gap-4">
+            <div className="text-right hidden md:block">
+              <p className="text-xs text-blue-200/60 uppercase tracking-wider font-semibold">Academic Year 2025-2026</p>
+              <p className="text-sm font-medium text-white">Welcome, <span className="text-cyan-400">Student</span></p>
+            </div>
+            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 p-[2px] shadow-lg shadow-blue-500/20">
+               <div className="h-full w-full rounded-full bg-slate-900 flex items-center justify-center text-xs font-bold">
+                 ST
+               </div>
+            </div>
+         </div>
       </nav>
 
       <div className="relative z-10 container mx-auto px-6 pt-8 pb-20">
+        {/* ... (Rest of the page content remains identical) */}
         <Link to="/modules" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-8 transition-colors group text-sm font-medium">
           <svg className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
           Back to Modules
         </Link>
 
-        {/* Hero Section */}
         <div className="relative overflow-hidden bg-slate-900/50 border border-white/10 rounded-3xl p-8 mb-10 flex flex-col md:flex-row items-center md:items-start gap-8 backdrop-blur-md shadow-xl">
            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-70"></div>
            <div className="relative z-10">
@@ -154,9 +162,8 @@ const CourseDetailsPage = () => {
 
                     <div className="flex items-center gap-4 w-full md:w-auto">
                        {assignment.status === 'Submitted' ? (
-                          // --- CLICKABLE SCORE CARD ---
                           <div 
-                            onClick={() => handleOpenFeedbackModal(assignment)} // CLICK TRIGGERS FEEDBACK
+                            onClick={() => handleOpenFeedbackModal(assignment)} 
                             className="flex items-center gap-4 bg-slate-900/50 px-4 py-2 rounded-lg border border-white/5 cursor-pointer hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all group/score"
                           >
                             <div className="relative h-12 w-12 flex items-center justify-center">
@@ -169,10 +176,6 @@ const CourseDetailsPage = () => {
                             <div className="text-right">
                               <p className="text-[10px] text-gray-400 uppercase tracking-widest font-semibold group-hover/score:text-cyan-400 transition-colors">Feedback</p>
                               <p className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-300">{assignment.grade}</p>
-                            </div>
-                            {/* Small Icon to hint clickability */}
-                            <div className="text-gray-500 group-hover/score:text-white transition-colors">
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
                             </div>
                           </div>
                        ) : (
@@ -188,9 +191,7 @@ const CourseDetailsPage = () => {
             </div>
           )}
 
-          {/* TAB 3: STREAM */}
           {activeTab === 'discussion' && (
-             /* ... Discussion Code (same as before) ... */
              <div className="max-w-3xl mx-auto">
               <div className="bg-slate-800/50 border border-white/10 rounded-xl p-4 mb-8 focus-within:border-cyan-500/50 transition-colors shadow-lg">
                  <form onSubmit={handleSendMessage}>
@@ -222,7 +223,6 @@ const CourseDetailsPage = () => {
         </div>
       </div>
 
-      {/* --- MODALS --- */}
       <SubmitAssignmentModal 
         isOpen={isSubmitModalOpen} 
         onClose={() => setIsSubmitModalOpen(false)} 

@@ -128,7 +128,7 @@ function HomePage() {
       {/* Navbar */}
       <nav className="relative z-50 w-full px-8 py-6 flex justify-between items-center bg-transparent">
         <div className="flex items-center space-x-3">
-           <div className="h-10 w-10 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center font-bold border border-white/20 text-white">S</div>
+            <div className="h-9 w-9 bg-blue-600 rounded-lg flex items-center justify-center font-bold shadow-lg shadow-blue-500/30 text-white group-hover:scale-110 transition-transform">S</div>
            <span className="text-xl font-bold tracking-wide">SDID <span className="text-cyan-400">Portal</span></span>
         </div>
         <div className="space-x-6 hidden md:block">
