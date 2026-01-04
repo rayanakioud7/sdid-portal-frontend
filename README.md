@@ -71,7 +71,7 @@ npm run dev
 ![Home Page](screenshots/HomePage.png)
 
 ### 🎓 Student Dashboard
-![Module Page](screenshots/ModulePage.png)
+![Module Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/HomePage.png?raw=true)
 ![Courses Page](screenshots/CoursesPage.png)
 ![Project Details](screenshots/ProjectStudent.png)
 ![Submitting Project](screenshots/SubmittingProject.png)
