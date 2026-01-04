@@ -65,7 +65,28 @@ Start the development server:
 npm run dev
 ```
 
-📸 Screenshots
-(You can add screenshots here later!)
+## 📸 Screenshots
+### Home Page
+(./screenshots/HomePage.png)
 
-Built with ❤️ by Rayan for the SDID Department.
+### 🎓 Student Dashboard
+![Student Dashboard] 
+(./screenshots/ModulePage.png)
+(./screenshots/CoursesPage.png)
+(./screenshots/ProjectStudent.png)
+(./screenshots/SubmittingProject.png)
+(./screenshots/CommentStudent.png)
+
+### 👨‍🏫 Instructor Grading
+![Grading Cockpit]
+(./screenshots/ProjectsGrading.png)
+(./screenshots/Grading.png)
+(./screenshots/CoursesUploadPRof.png)
+(./screenshots/CommentProf.png)
+
+### 👤 Admin System
+![Admin Section]
+(./screenshots/Admin.png)
+
+
+Built with ❤️ by Rayan Akioud and Mohammed Sabri for the SDID Department.

@@ -91,7 +91,7 @@ const ProfessorDashboard = () => {
       {/* Navbar */}
       <nav className="relative z-50 w-full px-6 py-4 flex justify-between items-center backdrop-blur-md border-b border-white/10 bg-slate-900/40">
          <div className="flex items-center space-x-2">
-            <div className="h-9 w-9 bg-blue-600 rounded-lg flex items-center justify-center font-bold shadow-lg shadow-blue-500/30 text-white">F</div>
+            <div className="h-9 w-9 bg-blue-600 rounded-lg flex items-center justify-center font-bold shadow-lg shadow-blue-500/30 text-white group-hover:scale-110 transition-transform">S</div>
             <span className="text-xl font-bold tracking-wide">Instructor <span className="text-cyan-400">Panel</span></span>
          </div>
          <div className="flex items-center gap-3">
