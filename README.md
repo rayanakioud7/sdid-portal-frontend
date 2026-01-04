@@ -68,23 +68,23 @@ npm run dev
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](./screenshots/HomePage.png)
+![Home Page](screenshots/HomePage.png)
 
 ### 🎓 Student Dashboard
-![Module Page](./screenshots/ModulePage.png)
-![Courses Page](./screenshots/CoursesPage.png)
-![Project Details](./screenshots/ProjectStudent.png)
-![Submitting Project](./screenshots/SubmittingProject.png)
-![Student Comments](./screenshots/CommentStudent.png)
+![Module Page](screenshots/ModulePage.png)
+![Courses Page](screenshots/CoursesPage.png)
+![Project Details](screenshots/ProjectStudent.png)
+![Submitting Project](screenshots/SubmittingProject.png)
+![Student Comments](screenshots/CommentStudent.png)
 
 ### 👨‍🏫 Instructor Grading
-![Grading List](./screenshots/ProjectsGrading.png)
-![Grading Interface](./screenshots/Grading.png)
-![Course Upload](./screenshots/CoursesUploadPRof.png)
-![Instructor Comments](./screenshots/CommentProf.png)
+![Grading List](screenshots/ProjectsGrading.png)
+![Grading Interface](screenshots/Grading.png)
+![Course Upload](screenshots/CoursesUploadPRof.png)
+![Instructor Comments](screenshots/CommentProf.png)
 
 ### 👤 Admin System
-![Admin Section](./screenshots/Admin.png)
+![Admin Dashboard](screenshots/Admin.png)
 
 
 Built with ❤️ by Rayan Akioud and Mohammed Sabri for the SDID Department.
