@@ -1,16 +1,71 @@
-# React + Vite
+# 🏛️ SDID Portal (FST Mohammedia)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Where Data Science Meets Innovation.**
+> The unified academic platform for the Licence Science de Données et Informatique Décisionnelle.
 
-Currently, two official plugins are available:
+![Project Status](https://img.shields.io/badge/Status-Prototype-cyan?style=flat-square)
+![Tech Stack](https://img.shields.io/badge/Frontend-React_18-blue?style=flat-square)
+![Styling](https://img.shields.io/badge/Style-Tailwind_CSS-38bdf8?style=flat-square)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Overview
+The **SDID Portal** is a centralized Learning Management System (LMS) designed specifically for Data Science students and professors at FST. It bridges the gap between academic management and modern UX, featuring a unique **"Cyber-Moroccan"** aesthetic that blends traditional Zellij patterns with futuristic glassmorphism.
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎓 Student Module
+- **3D Interactive Dashboard:** A bento-grid layout with tilt effects and real-time typing animations.
+- **Course Management:** Access PDF materials, labs, and assignments.
+- **Submission System:** Upload projects and receive visual feedback (Grades & Comments).
+- **Class Stream:** Real-time chat integration for module discussions.
 
-## Expanding the ESLint configuration
+### 👨‍🏫 Instructor Module
+- **Grading Cockpit:** A dedicated interface to review submissions and assign grades.
+- **Content Upload:** Contextual buttons to post new chapters and resources.
+- **Student Analytics:** Track submission status (Pending vs Graded) at a glance.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛡️ Admin Module
+- **User Management:** Approve pending registrations and manage user roles (Student/Professor).
+- **Security Control:** Ban/Unban users and monitor system stats.
+
+## 🎨 Design System
+- **Theme:** *Majorelle Night* (Deep Blue, Cyan, Slate).
+- **Identity:** Custom "Cyber-Zellij" patterns using SVG and CSS animations.
+- **UX:** Glassmorphism cards with physics-based 3D tilt interactions.
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js (Vite)
+- **Styling:** Tailwind CSS
+- **Routing:** React Router DOM
+- **Icons:** FontAwesome & Heroicons
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js installed
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR-USERNAME/sdid-portal-frontend.git](https://github.com/YOUR-USERNAME/sdid-portal-frontend.git)
+
+### Navigate to the project folder:
+
+```bash
+cd sdid-portal-frontend
+Install dependencies:
+```
+
+Install dependencies
+```bash
+npm install
+Start the development server:
+```
+Start the development server:
+```bash
+npm run dev
+```
+
+📸 Screenshots
+(You can add screenshots here later!)
+
+Built with ❤️ by Rayan for the SDID Department.
