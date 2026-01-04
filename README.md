@@ -68,23 +68,23 @@ npm run dev
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](screenshots/HomePage.png)
+![Home Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/HomePage.png?raw=true)
 
 ### 🎓 Student Dashboard
 ![Module Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/HomePage.png?raw=true)
-![Courses Page](screenshots/CoursesPage.png)
-![Project Details](screenshots/ProjectStudent.png)
-![Submitting Project](screenshots/SubmittingProject.png)
-![Student Comments](screenshots/CommentStudent.png)
+![Courses Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/CoursesPage.png?raw=true)
+![Project Details](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/ProjectStudent.png?raw=true)
+![Submitting Project](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/SubmittingProject.png?raw=true)
+![Student Comments](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/CommentStudent.png?raw=true)
 
 ### 👨‍🏫 Instructor Grading
-![Grading List](screenshots/ProjectsGrading.png)
-![Grading Interface](screenshots/Grading.png)
-![Course Upload](screenshots/CoursesUploadPRof.png)
-![Instructor Comments](screenshots/CommentProf.png)
+![Grading List](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/ProjectsGrading.png?raw=true)
+![Grading Interface](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/Grading.png?raw=true)
+![Course Upload](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/CoursesUploadPRof.png?raw=true)
+![Instructor Comments](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/CommentProf.png?raw=true)
 
 ### 👤 Admin System
-![Admin Dashboard](screenshots/Admin.png)
+![Admin Dashboard](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/Admin.png?raw=true)
 
 
 Built with ❤️ by Rayan Akioud and Mohammed Sabri for the SDID Department.
