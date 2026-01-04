@@ -71,7 +71,7 @@ npm run dev
 ![Home Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/HomePage.png?raw=true)
 
 ### 🎓 Student Dashboard
-![Module Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/HomePage.png?raw=true)
+![Module Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/ModulePage.png?raw=true)
 ![Courses Page](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/CoursesPage.png?raw=true)
 ![Project Details](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/ProjectStudent.png?raw=true)
 ![Submitting Project](https://github.com/rayanakioud7/sdid-portal-frontend/blob/main/src/screenshots/SubmittingProject.png?raw=true)
